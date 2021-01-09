@@ -1,4 +1,3 @@
-import { v1 } from "uuid";
 import QGate from "./QGate";
 import Qubit from "./Qubit";
 
@@ -6,7 +5,6 @@ import Qubit from "./Qubit";
 // exists in the topology of a circuit.
 class QCircuitElement {
   private gate: QGate;
-  UUID: string;
   outputs: Array<QCircuitElement>;
   row: number;
   step: number;
@@ -25,8 +23,6 @@ class QCircuitElement {
     this.row = row;
     this.step = step;
     this.inputs = inputs;
-
-    this.UUID = v1();
   }
 
   // TODO this should prpobably take a QCE
@@ -48,10 +44,6 @@ class QCircuitElement {
 
   GetStep(): number {
     return this.step;
-  }
-
-  GetUUID(): string {
-    return this.UUID;
   }
 
   GetOutput(index: number): QCircuitElement {
