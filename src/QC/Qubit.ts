@@ -1,19 +1,19 @@
 import {
-  Complex,
-  Matrix,
-  subset,
-  index,
   abs,
-  square,
-  sqrt,
   add,
+  Complex,
   divide,
+  index,
+  Matrix,
+  sqrt,
+  square,
+  subset,
 } from "mathjs";
 import { new0, new1 } from "./Constants";
 import StateVector from "./StateVector";
 
 class Qubit {
-  stateVector: StateVector;
+  private stateVector: StateVector;
   constructor(m: Matrix) {
     this.stateVector = new StateVector(m);
   }

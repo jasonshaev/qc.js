@@ -49,6 +49,7 @@ test("random spy", () => {
   expect(r2).toBe(1);
 });
 
+// Override random number generator so it is deterministic for the duration of the unit tests
 beforeEach(() => {
   const r = jest.spyOn(global.Math, "random");
   let x = 0;
