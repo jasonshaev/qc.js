@@ -1,6 +1,8 @@
 # QC.js (Quantum Circuits.js)
 This WIP project aims to provide a package and UI for building and executing simulated Quantum Circuits in javascript (Typescript). Currently there is no UI, but many of the building blocks for building and executing circuits are in place. To get a feel for it: take a look at the QCircuit.test.ts file. NOTE: currently qc.js cannot track superposition states, which are required to implement most Quantum Algorithms. 
 
+The motivation for this project was simple: I wanted to learn more about how Quantum Computers work, and what better way than to try and implement and simulated one myself?
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## What is currently implemented
