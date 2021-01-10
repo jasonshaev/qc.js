@@ -25,7 +25,6 @@ class QCircuitElement {
     this.inputs = inputs;
   }
 
-  // TODO this should prpobably take a QCE
   AddInput(input: Qubit) {
     this.inputs.push(input);
   }

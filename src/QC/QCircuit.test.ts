@@ -37,7 +37,6 @@ test("2 inputs, 1 Step identity", () => {
 test("2 inputs, 2 Step CX", () => {
   const circuit = new QCircuit(2, 2);
 
-  // TODO fix having to give row/step twice
   const cx = new QCircuitElement(new QGate_Cx(), [], 0, 2);
   circuit.AddCE(cx);
 
@@ -57,7 +56,7 @@ test("2 inputs, 2 Step CX", () => {
   ).toBe(true);
 });
 
-// bell pair?
+// bell pair
 test("2 inputs, 2 Step H, CX", () => {
   const circuit = new QCircuit(2, 2);
 
@@ -65,10 +64,10 @@ test("2 inputs, 2 Step H, CX", () => {
   circuit.AddCE(cx);
 
   const h1 = new QCircuitElement(new QGate_Hadamard(), [cx], 0, 1);
-  const identity2 = new QCircuitElement(new QGate_Identity(), [cx], 1, 1);
+  const identity = new QCircuitElement(new QGate_Identity(), [cx], 1, 1);
 
   circuit.AddCE(h1);
-  circuit.AddCE(identity2);
+  circuit.AddCE(identity);
 
   const result = circuit.Execute([new0(), new0()]);
 
