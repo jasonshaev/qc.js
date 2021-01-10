@@ -4,7 +4,7 @@ This WIP project aims to provide a package and UI for building and executing sim
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## What is currently implemented
-Run: `npm test` after `npm install`<br />
+### `npm test` after `npm install`<br />
 The output will be a bunch of ASCII matrices, demonstrating some very simple circuits and their execution.
 
 ## Available Scripts
