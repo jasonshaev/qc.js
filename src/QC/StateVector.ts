@@ -1,5 +1,6 @@
 import { abs, dot, Matrix, square, forEach } from "mathjs";
 
+//StateVector contains a matrix representing the state of a vector with associated operations.
 class StateVector {
   private m: Matrix;
   constructor(m: Matrix) {
